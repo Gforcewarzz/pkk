@@ -1,0 +1,158 @@
+/* assets/css/navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: var(--sidebar-width);
+  right: 0;
+  height: 60px;
+  background: white;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  z-index: 100;
+  transition: left 0.3s ease-in-out;
+}
+
+body.sidebar-mini .navbar {
+  left: var(--sidebar-mini-width);
+}
+
+/* Left side of navbar */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-toggle {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  cursor: pointer;
+  border-right: 1px solid #f4f6f9;
+  transition: background-color 0.2s;
+}
+
+.nav-toggle .fa-bars {
+  font-size: 1.2rem; /* Ukuran ikon yang lebih proporsional */
+}
+
+.nav-toggle:hover {
+  background: #f8f9fa;
+  color: var(--navy-dark);
+}
+
+/* Perbaikan hover state */
+.nav-toggle:active {
+  background: #e9ecef;
+}
+
+.navbar-brand {
+  padding: 0 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #343a40;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #f4f6f9;
+}
+
+/* Right side of navbar */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-link {
+  height: 60px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  color: #6c757d;
+  text-decoration: none;
+  border-left: 1px solid #f4f6f9;
+}
+
+.nav-link:hover {
+  background: #f8f9fa;
+  color: var(--navy-dark);
+}
+
+.nav-link i {
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+/* Notification badge */
+.nav-link .badge {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  font-size: 0.6rem;
+  padding: 3px 6px;
+  border-radius: 10px;
+  background: #dc3545;
+  color: white;
+}
+
+/* User dropdown */
+.user-dropdown {
+  height: 100%;
+  position: relative;
+}
+
+.user-dropdown > .nav-link {
+  padding: 0 20px;
+}
+
+.user-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 220px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-dropdown:hover .user-menu {
+  display: block;
+}
+
+.user-menu a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #343a40;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.user-menu a:hover {
+  background: #f8f9fa;
+}
+
+.user-menu i {
+  width: 20px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,105 @@
+/* assets/css/sidebar.css */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: var(--navy-dark);
+  color: white;
+  z-index: 101;
+  transition: width 0.3s ease-in-out;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+body.sidebar-mini .sidebar {
+  width: var(--sidebar-mini-width);
+}
+
+.sidebar-brand {
+  padding: 15px 20px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.sidebar-item {
+  margin-bottom: 5px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  color: white;
+  background: var(--navy-light);
+}
+
+.sidebar-link i {
+  width: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+/* Mini sidebar text hiding */
+body.sidebar-mini .sidebar-link span {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.sidebar-mini .sidebar-brand span {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Hover effect for mini sidebar */
+@media (min-width: 992px) {
+  body.sidebar-mini .sidebar:hover {
+    width: var(--sidebar-width);
+  }
+
+  body.sidebar-mini .sidebar:hover .sidebar-link span,
+  body.sidebar-mini .sidebar:hover .sidebar-brand span {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991.98px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: var(--sidebar-width) !important;
+  }
+
+  body.sidebar-open .sidebar {
+    transform: translateX(0);
+  }
+
+  .navbar {
+    left: 0 !important;
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+  }
+}
