@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (in_array($file_ext, $allowed_ext)) {
             // Rename gambar agar unik
             $file_name_new = time() . "_" . uniqid() . "." . $file_ext;
-            $target_dir  = "assets/image/";
+            $target_dir  = "../assets/image/";
             $target_file = $target_dir . $file_name_new;
 
             // Pindahkan file ke folder tujuan
