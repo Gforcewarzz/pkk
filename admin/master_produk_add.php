@@ -29,18 +29,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (in_array($file_ext, $allowed_ext)) {
             // Rename gambar agar unik
             $file_name_new = time() . "_" . uniqid() . "." . $file_ext;
-            $target_dir  = "../assets/image/";
+            $target_dir  = "../assets/img/";
             $target_file = $target_dir . $file_name_new;
 
             // Pindahkan file ke folder tujuan
             if (move_uploaded_file($file_tmp, $target_file)) {
-                echo "File berhasil diupload ke: " . $target_file;
                 $gambar = $file_name_new;
             } else {
-                echo "Gagal mengupload gambar ke: " . $target_file;
+                $error = "Gagal mengupload gambar.";
             }
-            exit(); // Hentikan eksekusi untuk melihat pesan ini
-
         } else {
             $error = "Format file tidak didukung. Gunakan JPG, JPEG, PNG, atau GIF.";
         }
@@ -68,11 +65,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Main content -->
     <section class="content">
         <?php if (!empty($error)): ?>
-        <div class="alert alert-danger"><?= $error; ?></div>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Gagal!</strong> <?= $error; ?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         <?php endif; ?>
 
         <?php if (!empty($success)): ?>
-        <div class="alert alert-success"><?= $success; ?></div>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Berhasil!</strong> <?= $success; ?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         <?php endif; ?>
 
         <div class="box">
@@ -112,7 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <button type="submit" class="btn btn-primary">
                             <i class="fa fa-save"></i> Simpan Produk
                         </button>
-                        <a href="produk.php" class="btn btn-secondary">Batal</a>
+                        <a href="master_produk.php" class="btn btn-secondary">Batal</a>
                     </div>
                 </form>
             </div>

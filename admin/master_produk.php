@@ -57,11 +57,10 @@ $result = mysqli_query($conn, $query);
                                 <?php endif; ?>
                             </td>
                             <td>
-                                <a href="edit_produk.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">
+                                <a href="master_produk_edit.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">
                                     <i class="fa fa-edit"></i> Edit
                                 </a>
-                                <a href="../process/delete_produk.php?id=<?= $row['id'] ?>"
-                                    class="btn btn-danger btn-sm"
+                                <a href="master_produk_delete.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm"
                                     onclick="return confirm('Yakin ingin menghapus produk ini?')">
                                     <i class="fa fa-trash"></i> Hapus
                                 </a>

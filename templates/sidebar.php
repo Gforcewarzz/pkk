@@ -13,7 +13,7 @@
             </a>
         </li>
         <li class="sidebar-item">
-            <a href="produk.php" class="sidebar-link">
+            <a href="master_produk.php" class="sidebar-link">
                 <i class="fas fa-box"></i>
                 <span>Produk</span>
             </a>
@@ -25,7 +25,7 @@
             </a>
         </li>
         <li class="sidebar-item">
-            <a href="users.php" class="sidebar-link">
+            <a href="master_users.php" class="sidebar-link">
                 <i class="fas fa-users"></i>
                 <span>Users</span>
             </a>
