@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (mysqli_stmt_execute($stmt)) {
         echo "<script>
                 alert('Pengguna berhasil diperbarui!');
-                window.location='users.php';
+                window.location='master_users.php';
               </script>";
     } else {
         echo "<script>alert('Gagal memperbarui pengguna!');</script>";
@@ -66,7 +66,7 @@ include '../templates/sidebar.php';
                     <button type="submit" class="btn btn-success">
                         <i class="fa fa-save"></i> Simpan Perubahan
                     </button>
-                    <a href="users.php" class="btn btn-danger">
+                    <a href="master_users.php" class="btn btn-danger">
                         <i class="fa fa-times"></i> Batal
                     </a>
                 </form>

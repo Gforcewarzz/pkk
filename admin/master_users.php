@@ -41,7 +41,7 @@ $result = mysqli_query($conn, $query);
                             <td><?= $row['email'] ?></td>
                             <td><?= ucfirst($row['role']) ?></td>
                             <td>
-                                <a href="edit_user.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">
+                                <a href="master_users_edit.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">
                                     <i class="fa fa-edit"></i> Edit
                                 </a>
                                 <a href="master_users_delete.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm"

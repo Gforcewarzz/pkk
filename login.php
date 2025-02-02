@@ -51,105 +51,105 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #f4f4f4;
-        }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f4f4f4;
+    }
 
-        .login-container {
-            background: white;
-            padding: 30px;
-            width: 350px;
-            border-radius: 12px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            transition: transform 0.3s;
-        }
+    .login-container {
+        background: white;
+        padding: 30px;
+        width: 350px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.3s;
+    }
 
-        .login-container:hover {
-            transform: scale(1.02);
-        }
+    .login-container:hover {
+        transform: scale(1.02);
+    }
 
-        h2 {
-            margin-bottom: 20px;
-            color: #333;
-            font-weight: 600;
-        }
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+        font-weight: 600;
+    }
 
-        .login-container input {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 16px;
-            outline: none;
-            transition: 0.3s;
-        }
+    .login-container input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        outline: none;
+        transition: 0.3s;
+    }
 
-        .login-container input:focus {
-            border-color: #5a67d8;
-            box-shadow: 0px 0px 5px rgba(90, 103, 216, 0.5);
-        }
+    .login-container input:focus {
+        border-color: #5a67d8;
+        box-shadow: 0px 0px 5px rgba(90, 103, 216, 0.5);
+    }
 
-        button {
-            width: 100%;
-            padding: 12px;
-            margin-top: 15px;
-            background-color: #5a67d8;
-            border: none;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 15px;
+        background-color: #5a67d8;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
 
-        button:hover {
-            background: #434190;
-        }
+    button:hover {
+        background: #434190;
+    }
 
-        .alert {
-            background-color: #e53e3e;
-            color: white;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-        }
+    .alert {
+        background-color: #e53e3e;
+        color: white;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
 
-        p {
-            margin-top: 10px;
-            font-size: 14px;
-        }
+    p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
 
-        a {
-            color: #5a67d8;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    a {
+        color: #5a67d8;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    a:hover {
+        text-decoration: underline;
+    }
     </style>
 </head>
 
 <body>
     <div class="login-container">
         <?php if (isset($_SESSION['login_error'])): ?>
-            <div class="alert"><?= $_SESSION['login_error'] ?></div>
-            <?php unset($_SESSION['login_error']); ?>
+        <div class="alert"><?= $_SESSION['login_error'] ?></div>
+        <?php unset($_SESSION['login_error']); ?>
         <?php endif; ?>
 
         <h2>Login</h2>
