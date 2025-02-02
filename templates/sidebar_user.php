@@ -12,12 +12,7 @@
                 <span>Dashboard</span>
             </a>
         </li>
-        <li class="sidebar-item">
-            <a href="master_produk.php" class="sidebar-link">
-                <i class="fas fa-box"></i>
-                <span>Produk</span>
-            </a>
-        </li>
+
         <li class="sidebar-item">
             <a href="cart.php" class="sidebar-link">
                 <i class="fas fa-shopping-basket"></i>
@@ -30,25 +25,20 @@
                 <span>Pesanan</span>
             </a>
         </li>
-
+        <li class="sidebar-item">
+            <a href="history_pesanan.php" class="sidebar-link">
+                <i class="fas fa-history"></i>
+                <span>History Pesanan</span>
+            </a>
+        </li>
         <li class="sidebar-item">
             <a href="menu.php" class="sidebar-link">
                 <i class="fas fa-bars"></i>
                 <span>Menu</span>
             </a>
         </li>
-        <li class="sidebar-item">
-            <a href="master_users.php" class="sidebar-link">
-                <i class="fas fa-users"></i>
-                <span>Users</span>
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a href="history_all.php" class="sidebar-link">
-                <i class="fas fa-chart-bar"></i>
-                <span>Laporan</span>
-            </a>
-        </li>
+
+
         <li class="sidebar-item">
             <a href="../logout.php" class="sidebar-link">
                 <i class="fas fa-sign-out-alt"></i>

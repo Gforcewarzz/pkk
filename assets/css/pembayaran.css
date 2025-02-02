@@ -1,0 +1,100 @@
+.payment-content {
+  padding: 20px;
+}
+
+.payment-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.payment-table th,
+.payment-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.payment-form-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.payment-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.payment-btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.payment-btn-submit:hover {
+  background: #45a049;
+}
+
+.payment-alert-error {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.payment-content {
+  padding: 20px;
+}
+
+.payment-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-alert-success {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.payment-success-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-back-to-menu {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-back-to-menu:hover {
+  background: #45a049;
+}

@@ -28,7 +28,7 @@ mysqli_stmt_bind_param($stmt, 'i', $id);
 if (mysqli_stmt_execute($stmt)) {
     echo "<script>
             alert('Produk berhasil dihapus!');
-            window.location='produk.php';
+            window.location='master_produk.php';
           </script>";
 } else {
     echo "<script>alert('Gagal menghapus produk!'); window.location='master_produk.php';</script>";

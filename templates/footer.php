@@ -1,7 +1,5 @@
 <!-- templates/footer.php -->
-<footer
-    style="margin-left: var(--sidebar-width); padding: 20px; text-align: center; color: #6c757d; transition: margin-left 0.3s ease-in-out;">
-    <p>&copy; 2024 Parfum Shop. All rights reserved.</p>
+<footer <p>&copy; 2025 AROMATHICA</p>
 </footer>
 
 <!-- jQuery -->

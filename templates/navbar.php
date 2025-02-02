@@ -24,8 +24,7 @@
         </div>
         <div class="user-dropdown">
             <a href="#" class="nav-link">
-                <i class="far fa-user-circle"></i> <!-- Menggunakan far untuk outline style -->
-                <span>Administrator</span>
+                <span>AROMATHICA</span>
             </a>
             <div class="user-menu">
                 <a href="#">
@@ -36,7 +35,7 @@
                     <i class="fas fa-cog"></i>
                     <span>Settings</span>
                 </a>
-                <a href="#">
+                <a href="../logout.php">
                     <i class="fas fa-sign-out-alt"></i>
                     <span>Logout</span>
                 </a>

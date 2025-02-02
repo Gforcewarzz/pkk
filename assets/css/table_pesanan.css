@@ -1,0 +1,48 @@
+.detail-content {
+  padding: 20px;
+}
+
+.order-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.info-group {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.info-group h3 {
+  margin-bottom: 10px;
+  color: #2d3748;
+  font-weight: bold;
+}
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.detail-table th,
+.detail-table td {
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.detail-table thead {
+  background-color: #f8f9fa;
+}
+
+.total-label {
+  text-align: right;
+  font-weight: bold;
+}
+
+.total-amount {
+  font-weight: bold;
+  color: #2d3748;
+}
